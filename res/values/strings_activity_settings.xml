@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General Settings</string>
+    <string name="pref_title_add_friends_to_messages">Change Theme</string>
+    <string name="pref_title_change_time_format">Time Format</string>
+    <string name="pref_title_hide_seconds">Hide Seconds</string>
+	<string name="pref_description_hide_seconds">Eg: 12:59</string>
+	<string name="pref_title_hide_seconds_blink">Blink separator</string>
+	<string name="pref_description_hide_seconds_blink">Blinks the separator between hour and minutes. Works only in hide seconds mode.</string>
+    
+    
+    <string-array name="pref_example_list_titles">
+        <item>LED Green</item>
+        <item>LED Red</item>
+        <item>LED Blue</item>
+        <item>LED Soft Blue</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>-1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_example_list_time_format_titles">
+        <item>12 hour</item>
+        <item>24 hour</item>
+    </string-array>
+    <string-array name="pref_example_list_time_format_values">
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+    
+
+</resources>

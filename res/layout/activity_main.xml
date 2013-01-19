@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/displayBackground"
+    android:clickable="true"
+    tools:context=".MainActivity" >
+
+    
+    <com.vijayganduri.nighttimedisplay.AutoFitTextView
+        android:id="@+id/time_text_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/led_background"
+        android:singleLine="true"
+        android:text="88:88:88" />
+    
+    
+    <com.vijayganduri.nighttimedisplay.AutoFitTextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="?attr/fontColor"
+        android:singleLine="true"/>
+    
+    
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/menuOptions"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            >
+            
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="?attr/fontColorBackground"/>
+        
+            <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="35dp"
+	            android:orientation="horizontal"
+	            android:gravity="center"
+	            android:layout_gravity="center"
+                >
+                
+                
+                <Button 
+                    android:id="@+id/settings_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/menu_item_background"
+                    android:text="@string/menu_settings"
+                    android:textColor="?attr/fontColor"/>
+                
+                 <View 
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.3"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/fontColorBackground"/>                       
+                          
+                
+                <Button 
+                    android:id="@+id/about_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/menu_item_background"
+                    android:text="@string/menu_about"
+                    android:textColor="?attr/fontColor"/>
+                        
+                
+                </LinearLayout>
+            
+        </LinearLayout>
+
+</RelativeLayout>
