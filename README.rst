@@ -1,5 +1,5 @@
 .. image::
-  /Night Time Display/res/drawable-xhdpi/hdtimedisplay.png
+  /logo.png
 
 Night Time Display
 ================
