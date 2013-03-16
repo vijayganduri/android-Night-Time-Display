@@ -39,7 +39,9 @@ public class AboutActivity extends Activity{
 		changeColors();
 	}
 
-	
+	/**
+	 * For flickering neon effect
+	 */
 	@Background
 	public void changeColors(){
 		
