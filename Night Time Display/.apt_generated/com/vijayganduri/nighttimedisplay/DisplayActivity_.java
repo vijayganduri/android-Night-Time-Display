@@ -35,9 +35,24 @@ public final class DisplayActivity_
     }
 
     private void afterSetContentView_() {
+        timeBackgroundTextView = ((TextView) findViewById(id.time_text_background));
         timeTextView = ((TextView) findViewById(id.time_text));
         menuOptions = ((LinearLayout) findViewById(id.menuOptions));
-        timeBackgroundTextView = ((TextView) findViewById(id.time_text_background));
+        {
+            View view = findViewById(id.about_button);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        DisplayActivity_.this.aboutClicked();
+                    }
+
+                }
+                );
+            }
+        }
         {
             View view = findViewById(id.displayBackground);
             if (view!= null) {
@@ -62,21 +77,6 @@ public final class DisplayActivity_
                     @Override
                     public void onClick(View view) {
                         DisplayActivity_.this.settingsClicked();
-                    }
-
-                }
-                );
-            }
-        }
-        {
-            View view = findViewById(id.about_button);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        DisplayActivity_.this.aboutClicked();
                     }
 
                 }
