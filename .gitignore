@@ -1,0 +1,17 @@
+#this is a comment
+/tmp 	# ignore /tmp file or directory
+.DS_Store
+*.class	# ignore class files
+# ignore target
+Night Time Display/target
+Night Time Display/.settings
+Night Time Display/.factorypath
+Night Time Display/.apt_generated
+Night Time Display/bin
+Night Time Display/gen
+Night Time Display/build.sh
+*.iml
+*.ipr
+*.iws
+*.swp
+*~	#ignore all files that end with tilde 
